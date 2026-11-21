@@ -230,6 +230,7 @@ for (const id of POPULAR) {
 const families = [...new Set(data.skus.map((s) => s.family))];
 const R = [];
 R.push('# Azure VM prices (India and global regions)', '');
+R.push('<!-- epifive:header -->', "> Compare Azure VM prices across India and global regions in INR and USD, as open JSON and CSV.\n\n[![Licence: MIT](https://img.shields.io/badge/licence-MIT-0a7560?style=flat-square)](LICENSE)\n[![Latest release](https://img.shields.io/github/v/release/epifive/azure-vm-prices?style=flat-square&label=release&color=4f5bd5)](https://github.com/epifive/azure-vm-prices/releases/latest)\n[![GitHub stars](https://img.shields.io/github/stars/epifive/azure-vm-prices?style=flat-square&color=b5791b)](https://github.com/epifive/azure-vm-prices/stargazers)\n\n**[Web version & docs on epifive.com](https://www.epifive.com/azure/vm-pricing?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices)** · **[Download the latest release](https://github.com/epifive/azure-vm-prices/releases/latest)**\n");
 R.push(
   `Open data set of Azure virtual machine retail prices for **${data.skus.length} popular VM sizes** in **${data.regions.length} regions**, in **INR and USD**, with pay-as-you-go (Linux and Windows), 1-year and 3-year reserved instance and spot prices. Last fetched **${data.fetchedAt}** from Microsoft's public Azure Retail Prices API.`,
   '',
@@ -298,8 +299,7 @@ R.push('- This project is not affiliated with or endorsed by Microsoft. Azure is
 R.push('## License', '');
 R.push('The code (`generate.mjs`) is released under the [MIT License](LICENSE). The price data is published by Microsoft through its public Retail Prices API; this repository only collects and reformats it. If you reuse the data set, a link back to this repository or to [epifive.com/azure/vm-pricing](' + SITE + '/azure/vm-pricing) is appreciated.', '');
 R.push('Found a wrong number or a missing size? Open an issue with the **Correction** template and include the official Azure pricing or Microsoft Learn link.', '');
-R.push('---', '');
-R.push(`Made by [EpiFive](${SITE}): practical IT, cloud and networking guides.`, '');
+R.push("---\n\n<p align=\"center\">Made by <b>EpiFive</b> — <a href=\"https://www.epifive.com/?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices\">www.epifive.com</a> · <a href=\"https://www.epifive.com/open-source?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices\">more open-source projects</a></p>\n");
 fs.writeFileSync(path.join(HERE, 'README.md'), R.join('\n'));
 
 // ---------- Issue template and repo metadata ----------

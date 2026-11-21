@@ -1,5 +1,14 @@
 # Azure VM prices (India and global regions)
 
+<!-- epifive:header -->
+> Compare Azure VM prices across India and global regions in INR and USD, as open JSON and CSV.
+
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-0a7560?style=flat-square)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/epifive/azure-vm-prices?style=flat-square&label=release&color=4f5bd5)](https://github.com/epifive/azure-vm-prices/releases/latest)
+[![GitHub stars](https://img.shields.io/github/stars/epifive/azure-vm-prices?style=flat-square&color=b5791b)](https://github.com/epifive/azure-vm-prices/stargazers)
+
+**[Web version & docs on epifive.com](https://www.epifive.com/azure/vm-pricing?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices)** · **[Download the latest release](https://github.com/epifive/azure-vm-prices/releases/latest)**
+
 Open data set of Azure virtual machine retail prices for **43 popular VM sizes** in **6 regions**, in **INR and USD**, with pay-as-you-go (Linux and Windows), 1-year and 3-year reserved instance and spot prices. Last fetched **2026-10-28** from Microsoft's public Azure Retail Prices API.
 
 Maintained by [EpiFive](https://www.epifive.com). Browse every size with region comparisons at [epifive.com/azure/vm-pricing](https://www.epifive.com/azure/vm-pricing), or estimate a whole deployment with the interactive [Azure pricing calculator](https://www.epifive.com/tools/azure-pricing-calculator).
@@ -93,4 +102,4 @@ Found a wrong number or a missing size? Open an issue with the **Correction** te
 
 ---
 
-Made by [EpiFive](https://www.epifive.com): practical IT, cloud and networking guides.
+<p align="center">Made by <b>EpiFive</b> — <a href="https://www.epifive.com/?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices">www.epifive.com</a> · <a href="https://www.epifive.com/open-source?utm_source=github&utm_medium=readme&utm_campaign=azure-vm-prices">more open-source projects</a></p>
